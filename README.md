@@ -4,7 +4,7 @@ Local learning stack:
 
 | Service    | URL                    | Notes                          |
 |------------|------------------------|--------------------------------|
-| Grafana    | http://localhost:3000  | `admin` / `admin`              |
+| Grafana    | http://localhost:3000  | login `admin` / `admin`        |
 | Prometheus | http://localhost:9090  | Targets, Graph, Status         |
 | Demo app   | http://localhost:9898  | Generates `/metrics` traffic   |
 
