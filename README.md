@@ -13,7 +13,7 @@ Prometheus is pre-wired as Grafana’s default datasource. A starter dashboard i
 ## Start / stop
 
 ```bash
-cd learn-observability
+cd prometheus-grafana-get-started
 
 # Podman machine must be running (macOS)
 podman machine start
