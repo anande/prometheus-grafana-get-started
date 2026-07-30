@@ -1,0 +1,18 @@
+global:
+  scrape_interval: 15s
+  evaluation_interval: 15s
+
+scrape_configs:
+  # Prometheus scrapes itself — good first target to explore
+  - job_name: prometheus
+    static_configs:
+      - targets: ["prometheus:9090"]
+
+  # Demo app metrics (http_requests_total, go_*, process_*, …)
+  - job_name: demo
+    metrics_path: /metrics
+    static_configs:
+      - targets: ["demo:9898"]
+        labels:
+          env: local
+          app: podinfo
